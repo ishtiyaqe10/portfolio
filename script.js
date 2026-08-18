@@ -19,9 +19,7 @@ const navLinks = document.querySelectorAll("#nav-menu a");
 navLinks.forEach((link) => {
 
     link.addEventListener("click", () => {
-
         navMenu.classList.remove("active");
-
     });
 
 });
@@ -31,6 +29,5 @@ navLinks.forEach((link) => {
 // CURRENT YEAR
 // ===============================
 
-const year = document.getElementById("year");
-
-year.textContent = new Date().getFullYear();
+document.getElementById("year").textContent =
+    new Date().getFullYear();
