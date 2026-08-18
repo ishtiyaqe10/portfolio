@@ -6,6 +6,11 @@
 
     <title>Ishtiyaqe Ahmad | CSE Student</title>
 
+    <meta
+      name="description"
+      content="Ishtiyaqe Ahmad — Computer Science Engineering student learning DSA and Full Stack Web Development."
+    />
+
     <link rel="stylesheet" href="style.css" />
 
     <!-- Google Font -->
@@ -16,11 +21,11 @@
   </head>
 
   <body>
-    <!-- ================= NAVBAR ================= -->
+    <!-- ================= NAVBAR SECTION ================= -->
 
     <header class="navbar">
       <div class="container nav-container">
-        <a href="#home" class="logo"> Ishtiyaqe <span>.</span> </a>
+        <a href="#home" class="logo"> Ishtiyaqe<span>.</span> </a>
 
         <nav id="nav-menu">
           <a href="#home">Home</a>
@@ -31,21 +36,29 @@
           <a href="#contact">Contact</a>
         </nav>
 
-        <button id="menu-btn" class="menu-btn">☰</button>
+        <button id="menu-btn" class="menu-btn" aria-label="Open menu">
+          ☰
+        </button>
       </div>
     </header>
 
-    <!-- ================= HERO ================= -->
+
+    <!-- ================= MAIN ================= -->
 
     <main>
+      <!-- ================= HERO SECTION ================= -->
+
       <section id="home" class="hero">
         <div class="container hero-container">
           <div class="hero-content">
             <p class="small-heading">HELLO, I'M</p>
 
-            <h1>Ishtiyaqe Ahmad</h1>
+            <h1>
+              Ishtiyaqe<br />
+              Ahmad
+            </h1>
 
-            <h2>CSE Student & Aspiring Full Stack Developer</h2>
+            <h2>CSE Student | Aspiring Software Engineer</h2>
 
             <p class="hero-description">
               I'm a Computer Science Engineering student currently learning Data
@@ -55,15 +68,27 @@
             <div class="hero-buttons">
               <a href="#projects" class="btn primary-btn"> View Projects </a>
 
-              <a href="#contact" class="btn secondary-btn"> Contact Me </a>
+              <!-- Resume: add your resume PDF link later -->
+              <a href="#" class="btn secondary-btn"> Resume </a>
             </div>
 
             <div class="social-links">
-              <a href="https://github.com/ishtiyaqe10" target="_blank"> GitHub </a>
+              <a
+                href="https://github.com/ishtiyaqe10"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
 
-              <a href="https://www.linkedin.com/in/ahmadfaizi18" target="_blank"> LinkedIn </a>
+              <!-- Replace # with your LinkedIn profile URL -->
+              <a href="https://www.linkedin.com/in/ahmadfaizi18" target="_blank" rel="noopener noreferrer">
+                LinkedIn
+              </a>
             </div>
           </div>
+
+          <!-- CODE CARD -->
 
           <div class="hero-card">
             <div class="code-card">
@@ -73,25 +98,26 @@
                 <span></span>
               </div>
 
-              <pre><code>
-const developer = {
+              <pre><code>const developer = {
     name: "Ishtiyaqe Ahmad",
     branch: "CSE",
     year: "4th Year",
-    learning: [
+
+    focus: [
         "DSA",
-        "JavaScript",
-        "MERN"
+        "Web Development"
     ],
+
+    currentlyLearning: "MERN Stack",
     goal: "Software Engineer"
-};
-</code></pre>
+};</code></pre>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ================= ABOUT ================= -->
+
+      <!-- ================= ABOUT SECTION ================= -->
 
       <section id="about" class="section">
         <div class="container">
@@ -100,17 +126,16 @@ const developer = {
           <h2 class="section-title">A little about me</h2>
 
           <div class="about-content">
-            <div>
+            <div class="about-text">
               <p>
-                I'm a Computer Science Engineering student currently in my
-                fourth year. I'm interested in software development and problem
-                solving.
+                I'm a fourth-year Computer Science Engineering student
+                interested in software development and problem solving.
               </p>
 
               <p>
-                Currently, I'm focusing on Data Structures & Algorithms and Full
-                Stack Web Development. My goal is to build strong technical
-                skills and start my career as a Software Engineer.
+                Currently, I'm focused on Data Structures & Algorithms and Full
+                Stack Web Development. I'm continuously learning and building
+                projects to strengthen my technical skills.
               </p>
             </div>
 
@@ -121,8 +146,8 @@ const developer = {
               </div>
 
               <div>
-                <strong>Current Focus</strong>
-                <span>DSA + Full Stack</span>
+                <strong>Currently Learning</strong>
+                <span>DSA + MERN Stack</span>
               </div>
 
               <div>
@@ -134,13 +159,17 @@ const developer = {
         </div>
       </section>
 
-      <!-- ================= SKILLS ================= -->
+
+
+      <!-- ================= SKILLS SECTION ================= -->
 
       <section id="skills" class="section section-alt">
         <div class="container">
           <p class="section-label">SKILLS</p>
 
           <h2 class="section-title">What I'm learning</h2>
+
+          <div class="skills-heading">Programming & Web</div>
 
           <div class="skills-grid">
             <div class="skill-card">
@@ -172,17 +201,22 @@ const developer = {
               <h3>Git & GitHub</h3>
               <p>Version Control</p>
             </div>
+          </div>
 
-            <div class="skill-card coming">
-              <div class="skill-icon">...</div>
-              <h3>MERN</h3>
-              <p>Currently Learning</p>
-            </div>
+          <div class="skills-heading learning-heading">Currently Learning</div>
+
+          <div class="learning-list">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>Express.js</span>
+            <span>MongoDB</span>
           </div>
         </div>
       </section>
 
-      <!-- ================= PROJECTS ================= -->
+
+
+      <!-- ================= PROJECTS SECTION ================= -->
 
       <section id="projects" class="section">
         <div class="container">
@@ -191,16 +225,16 @@ const developer = {
           <h2 class="section-title">My projects</h2>
 
           <div class="projects-grid">
-            <!-- Project 1 -->
+            <!-- PROJECT 01 -->
 
             <article class="project-card">
               <div class="project-number">01</div>
 
-              <h3>Portfolio Website</h3>
+              <h3>Personal Portfolio</h3>
 
               <p>
                 A responsive personal portfolio website built using HTML, CSS
-                and JavaScript.
+                and JavaScript to showcase my skills, education and projects.
               </p>
 
               <div class="tech-stack">
@@ -210,13 +244,25 @@ const developer = {
               </div>
 
               <div class="project-links">
-                <a href="#" target="_blank"> GitHub → </a>
+                <a
+                  href="https://github.com/ishtiyaqe10/portfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub →
+                </a>
 
-                <a href="#" target="_blank"> Live Demo → </a>
+                <a
+                  href="https://ishtiyaqe10.github.io/portfolio/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo →
+                </a>
               </div>
             </article>
 
-            <!-- Project 2 -->
+            <!-- PROJECT 02 -->
 
             <article class="project-card">
               <div class="project-number">02</div>
@@ -224,8 +270,8 @@ const developer = {
               <h3>Coming Soon</h3>
 
               <p>
-                I'm currently learning and building projects to strengthen my
-                development skills.
+                Currently learning and building my next project to strengthen my
+                development and problem-solving skills.
               </p>
 
               <div class="tech-stack">
@@ -234,15 +280,16 @@ const developer = {
               </div>
             </article>
 
-            <!-- Project 3 -->
+            <!-- PROJECT 03 -->
 
             <article class="project-card">
               <div class="project-number">03</div>
 
-              <h3>Future MERN Project</h3>
+              <h3>Coming Soon</h3>
 
               <p>
-                A full-stack project using React, Node.js, Express and MongoDB.
+                A future full-stack project that I will build while learning the
+                MERN stack.
               </p>
 
               <div class="tech-stack">
@@ -255,7 +302,9 @@ const developer = {
         </div>
       </section>
 
-      <!-- ================= EDUCATION ================= -->
+
+
+      <!-- ================= EDUCATION SECTION ================= -->
 
       <section id="education" class="section section-alt">
         <div class="container">
@@ -271,13 +320,13 @@ const developer = {
 
               <p class="education-branch">Computer Science & Engineering</p>
 
-              <p>Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV)</p>
+              <p>Rajiv Gandhi Proudyogiki Vishwavidyalaya </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ================= CONTACT ================= -->
+      <!-- ================= CONTACT SECTION ================= -->
 
       <section id="contact" class="section">
         <div class="container contact-container">
@@ -286,20 +335,33 @@ const developer = {
           <h2 class="section-title">Let's connect</h2>
 
           <p class="contact-text">
-            I'm currently learning, building projects and looking for
-            opportunities to start my career in software development.
+            I'm currently learning and building projects in software
+            development. I'm open to connecting with developers, recruiters and
+            opportunities.
           </p>
 
           <div class="contact-buttons">
+            <!-- Replace with your real email -->
             <a href="mailto:ishtiyaqe10@gmail.com" class="btn primary-btn">
               Email Me
             </a>
 
+            <!-- Replace # with your LinkedIn URL -->
             <a
-              href="https://www.linkedin.com/in/ahmadfaizi18" target="_blank"
+              href="https://www.linkedin.com/in/ahmadfaizi18"target="_blank"
+              rel="noopener noreferrer"
               class="btn secondary-btn"
             >
               LinkedIn
+            </a>
+
+            <a
+              href="https://github.com/ishtiyaqe10"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn secondary-btn"
+            >
+              GitHub
             </a>
           </div>
         </div>
@@ -310,7 +372,7 @@ const developer = {
 
     <footer>
       <div class="container footer-container">
-        <p>© <span id="year"></span> Ishtiyaqe Ahmad. All rights reserved.</p>
+        <p>© <span id="year"></span> Ishtiyaqe Ahmad</p>
 
         <p>Built with HTML, CSS & JavaScript.</p>
       </div>
